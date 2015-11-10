@@ -1,0 +1,30 @@
+<div class="parksContainer">
+	<div class="parkHeader">
+		<h1>{{singlePark.name}}</h1>
+		<br>{{singlePark.address}}
+
+	</div>
+
+	<div class="parkBox">
+		<div><img ng-src="{{singlePark.pic}}"></div>
+
+		<div class="inputBoxes">
+			<form ng-submit="sendMessageToService()">
+				<input type="text" placeholder="comment..." ng-model="message">
+				<input type="text" placeholder="Username..." ng-model="user">
+				<button>SubmitBrehh</button>
+
+			</form>
+		</div>
+
+
+
+		<p ng-repeat="parkMessage in parkMessages">{{parkMessage.text}}
+			<br> {{parkMessage.user}}
+
+		</p>
+
+	</div>
+		<footer-dir></footer-dir>
+
+</div>

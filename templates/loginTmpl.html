@@ -1,0 +1,24 @@
+<div class="loginBackground">
+
+
+
+
+	<!-- try ng submit with form-->
+	<form ng-submit="changeState(state)">
+		<select ng-change="changeState(state)"name="state" ng-model="state">
+			<option value="">State</option>
+			<option ng-value="state" ng-repeat="stat in states">{{stat}}</option>
+
+
+
+		</select>
+
+	</form>
+
+
+
+
+
+
+
+</div>
